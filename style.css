@@ -1,7 +1,7 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #000000;
 }
 
 body {
@@ -13,6 +13,7 @@ body {
 #app {
   user-select: none;
   font-size: 64px;
+  z-index: 500;
 }
 
 .text {
@@ -20,10 +21,11 @@ body {
   font-weight: bold;
   flex-wrap: wrap;
   font-variant: small-caps;
+  justify-content: center;
 }
 .character {
   position: relative;
-  color: #444;
+  color: #555;
   cursor: pointer;
   margin: 0px 6px;
 }
@@ -41,4 +43,12 @@ body {
   100% {
     filter: hue-rotate(360deg);
   }
+}
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
 }

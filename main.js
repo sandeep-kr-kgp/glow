@@ -1,5 +1,5 @@
 import './style.css';
-
+import { Firework } from './fireworks';
 function init() {
   const params = new URLSearchParams(window.location.search);
   const text = params.get('text') ?? 'Hello World';
@@ -25,3 +25,4 @@ function init() {
   });
 }
 init();
+Firework();
